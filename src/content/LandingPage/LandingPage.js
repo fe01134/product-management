@@ -37,7 +37,7 @@ const LandingPage = () => {
             </BreadcrumbItem>
           </Breadcrumb>
           <h1 className="landing-page__heading">
-            Defining and designing products with DesignThinkBuild
+            Design products using Design Thinking
           </h1>
         </div>
       </div>
