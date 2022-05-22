@@ -30,10 +30,10 @@ const TutorialHeader = () => (
           onClick={onClickSideNavExpand}
           isActive={isSideNavExpanded}
         />
-        <HeaderName element={Link} to="/" prefix="IBM">
-          Carbon Tutorial
+        <HeaderName element={Link} to="/" prefix="DesignThinkBuild">
+          Studio
         </HeaderName>
-        <HeaderNavigation aria-label="Carbon Tutorial">
+        <HeaderNavigation aria-label="Studio">
           <HeaderMenuItem element={Link} to="/repos">
             Repositories
           </HeaderMenuItem>
