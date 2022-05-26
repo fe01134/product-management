@@ -16,6 +16,11 @@ import {
   SideNavMenuItem,
   HeaderSideNavItems,
 } from 'carbon-components-react';
+import {
+  AppSwitcher20,
+  Notification20,
+  UserAvatar20,
+} from '@carbon/icons-react';
 import { Link } from 'react-router-dom';
 
 const Fade16 = () => (
@@ -57,16 +62,46 @@ const TutorialHeader = () => (
                 Repositories
               </HeaderMenuItem>
             </HeaderSideNavItems>
-
+            <SideNavMenu renderIcon={Fade16} title="Category title">
+              <SideNavMenuItem href="javascript:void(0)">Link</SideNavMenuItem>
+              <SideNavMenuItem aria-current="page" href="javascript:void(0)">
+                Link
+              </SideNavMenuItem>
+              <SideNavMenuItem href="javascript:void(0)">Link</SideNavMenuItem>
+            </SideNavMenu>
+            <SideNavMenu renderIcon={Fade16} title="Category title">
+              <SideNavMenuItem href="javascript:void(0)">Link</SideNavMenuItem>
+              <SideNavMenuItem aria-current="page" href="javascript:void(0)">
+                Link
+              </SideNavMenuItem>
+              <SideNavMenuItem href="javascript:void(0)">Link</SideNavMenuItem>
+            </SideNavMenu>
+            <SideNavMenu renderIcon={Fade16} title="Category title">
+              <SideNavMenuItem href="javascript:void(0)">Link</SideNavMenuItem>
+              <SideNavMenuItem aria-current="page" href="javascript:void(0)">
+                Link
+              </SideNavMenuItem>
+              <SideNavMenuItem href="javascript:void(0)">Link</SideNavMenuItem>
+            </SideNavMenu>
+            <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
+              Link
+            </SideNavLink>
             <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
               Link
             </SideNavLink>
           </SideNavItems>
-          <SideNavMenu renderIcon={Fade16} title="Category title">
-            <SideNavMenuItem href="javascript:void(0)">Link</SideNavMenuItem>
-          </SideNavMenu>
         </SideNav>
-        <HeaderGlobalBar />
+        <HeaderGlobalBar>
+          <HeaderGlobalAction aria-label="Notifications">
+            <Notification20 />
+          </HeaderGlobalAction>
+          <HeaderGlobalAction aria-label="User Avatar">
+            <UserAvatar20 />
+          </HeaderGlobalAction>
+          <HeaderGlobalAction aria-label="App Switcher">
+            <AppSwitcher20 />
+          </HeaderGlobalAction>
+        </HeaderGlobalBar>
       </Header>
     )}
   />
