@@ -45,6 +45,9 @@ const MainHeader = () => (
           <HeaderMenuItem element={Link} to="/journeys">
             Journeys
           </HeaderMenuItem>
+          <HeaderMenuItem element={Link} to="/features">
+            Features
+          </HeaderMenuItem>
         </HeaderNavigation>
         <SideNav
           aria-label="Side navigation"
@@ -54,6 +57,12 @@ const MainHeader = () => (
             <HeaderSideNavItems>
               <HeaderMenuItem element={Link} to="/products">
                 Products
+              </HeaderMenuItem>
+              <HeaderMenuItem element={Link} to="/features">
+                Features
+              </HeaderMenuItem>
+              <HeaderMenuItem element={Link} to="/journeys">
+                Journeys
               </HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
