@@ -4,7 +4,6 @@ import {
   HeaderContainer,
   HeaderName,
   HeaderNavigation,
-  HeaderMenuButton,
   HeaderMenuItem,
   HeaderGlobalBar,
   HeaderGlobalAction,
@@ -20,21 +19,12 @@ import {
 } from '@carbon/icons-react';
 import { Link } from 'react-router-dom';
 
-const isSideNavExpanded = new Boolean(true);
-const isActive = new Boolean(true);
-
 const MainHeader = () => (
   <HeaderContainer
     render={({ isSideNavExpanded, onClickSideNavExpand }) => (
       <Header aria-label="Studio">
         <div className="HeaderMenuButton" />
         <SkipToContent />
-        <HeaderMenuButton
-          aria-label="Open menu"
-          onClick={onClickSideNavExpand}
-          isActive={isSideNavExpanded}
-        />
-
         <HeaderName element={Link} to="/" prefix="DesignThinkBuild">
           Studio
         </HeaderName>

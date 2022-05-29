@@ -6,10 +6,7 @@ import {
   Button,
   Tabs,
   Tab,
-  UIShell,
   Link,
-  SideNav,
-  HeaderMenuButton,
 } from 'carbon-components-react';
 
 import { InfoSection, InfoCard } from '../../components/Info';
