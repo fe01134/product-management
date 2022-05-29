@@ -6,6 +6,10 @@ import {
   Button,
   Tabs,
   Tab,
+  UIShell,
+  Link,
+  SideNav,
+  HeaderMenuButton,
 } from 'carbon-components-react';
 
 import { InfoSection, InfoCard } from '../../components/Info';
@@ -26,7 +30,7 @@ const props = {
   },
 };
 
-const LandingPage = () => {
+const JourneysPage = () => {
   return (
     <div className="bx--grid bx--grid--full-width landing-page">
       <div className="bx--row landing-page__banner">
@@ -39,6 +43,9 @@ const LandingPage = () => {
           <h1 className="landing-page__heading">
             Design products using Design Thinking
           </h1>
+          <Link href="www.google.com" size="lg" isActive={true}>
+            findme
+          </Link>
         </div>
       </div>
       <div className="bx--row landing-page__r2">
@@ -52,11 +59,11 @@ const LandingPage = () => {
                       What is Carbon?
                     </h2>
                     <p className="landing-page__p">
-                      Studio is a design system for digital
-                      products and experiences. With the IBM Design Language as
-                      its foundation, the system consists of working code,
-                      design tools and resources, human interface guidelines,
-                      and a vibrant community of contributors.
+                      Studio is a design system for digital products and
+                      experiences. With the IBM Design Language as its
+                      foundation, the system consists of working code, design
+                      tools and resources, human interface guidelines, and a
+                      vibrant community of contributors.
                     </p>
                     <Button>Learn more</Button>
                   </div>
@@ -114,4 +121,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default JourneysPage;
