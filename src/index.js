@@ -11,6 +11,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter as Router } from 'react-router-dom';
 
+// To debug
+const element = <h1>hello world</h1>;
+console.log(element);
+
 ReactDOM.render(
   <Router>
     <App />

@@ -1,5 +1,5 @@
 import React from 'react';
-import RepoTable from './RepoTable';
+import JourneysTable from './JourneysTable';
 
 const headers = [
   {
@@ -31,7 +31,7 @@ const headers = [
 const rows = [
   {
     id: '1',
-    name: 'Repo 1',
+    name: 'Products 1',
     createdAt: 'Date',
     updatedAt: 'Date',
     issueCount: '123',
@@ -40,7 +40,7 @@ const rows = [
   },
   {
     id: '2',
-    name: 'Repo 2',
+    name: 'Products 2',
     createdAt: 'Date',
     updatedAt: 'Date',
     issueCount: '123',
@@ -49,7 +49,7 @@ const rows = [
   },
   {
     id: '3',
-    name: 'Repo 3',
+    name: 'Products 3',
     createdAt: 'Date',
     updatedAt: 'Date',
     issueCount: '123',
@@ -58,16 +58,17 @@ const rows = [
   },
 ];
 
-const RepoPage = () => {
+const JourneysPage = () => {
   return (
-    <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
-      <div className="bx--row repo-page__r1">
+    <div className="bx--grid bx--grid--full-width bx--grid--no-gutter products-page">
+      <div className="bx--row journeys-page__r1">
         <div className="bx--col-lg-16">
-          <RepoTable headers={headers} rows={rows} />
+          <JourneysTable headers={headers} rows={rows} />
+          <div className="HeaderMenuButton" />
         </div>
       </div>
     </div>
   );
 };
 
-export default RepoPage;
+export default JourneysPage;

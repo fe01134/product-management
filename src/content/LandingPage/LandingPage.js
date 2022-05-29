@@ -7,7 +7,9 @@ import {
   Tabs,
   Tab,
   UIShell,
+  Link,
   SideNav,
+  HeaderMenuButton,
 } from 'carbon-components-react';
 
 import { InfoSection, InfoCard } from '../../components/Info';
@@ -28,7 +30,7 @@ const props = {
   },
 };
 
-const LandingPage = () => {
+const JourneysPage = () => {
   return (
     <div className="bx--grid bx--grid--full-width landing-page">
       <div className="bx--row landing-page__banner">
@@ -41,6 +43,9 @@ const LandingPage = () => {
           <h1 className="landing-page__heading">
             Design products using Design Thinking
           </h1>
+          <Link href="www.google.com" size="lg" isActive={true}>
+            findme
+          </Link>
         </div>
       </div>
       <div className="bx--row landing-page__r2">
@@ -116,4 +121,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default JourneysPage;
